@@ -1,0 +1,16 @@
+- code:
+  - rawlogs.library.Multiple
+  - logs:
+    - - log_sync.SyncedLog
+      - biases:
+          aer: [rostime, 1355324456.4243476]
+        rawlog: uzhturtle-2012-12-12-16-15-22
+    - - log_sync.SyncedLog
+      - biases:
+          /imu/data: [rostime, 0.8484055995941162]
+        rawlog: uzhturtle-2012-12-12-16-15-22
+    - - rawlogs.library.RemoveSignals
+      - rawlog: uzhturtle-2012-12-12-16-15-22
+        signals: [aer, /imu/data]
+  desc: 'Synced version of uzhturtle-2012-12-12-16-15-22 (consistency: 0.141s)'
+  id: uzhturtle-2012-12-12-16-15-22-synced

@@ -1,0 +1,51 @@
+
+- id: uzhturtle-a-${date}
+  desc: "Run of UZH turtle in arena"
+  code:
+  - rawlogs.library.Multiple
+  - logs:
+    - - rawlogs_aer.AERLog
+      - "file:filename": "${date}.aedat"
+        interval: 0.01
+
+    - - rawlogs_ros.ROSLog
+      - "file:filename": "${date}.bag"
+      
+    annotations:
+      tags: [- id: uzhturtle']
+      robot: &unicornA_base1
+        name: uzhturtle
+        shape: dvs-cam
+        profile: base1
+      motion:
+        agent: andrea  
+      environment: &uzh-barcode-arena
+        name: uzh_lab
+        config: barcode
+      events:
+        disturbances: []
+      notes: | 
+        pass
+
+- id: uzhturtle-a-2012-12-12-12-33-19  # good angular
+- id: uzhturtle-a-2012-12-12-12-24-59  # good angular 
+- id: uzhturtle-a-2012-12-12-12-46-23  # good angular
+- id: uzhturtle-a-2012-12-12-12-31-22  # good angular
+            
+- id: uzhturtle-a-2012-12-11-22-56-53
+- id: uzhturtle-a-2012-12-12-12-22-46
+- id: uzhturtle-a-2012-12-12-12-23-56
+- id: uzhturtle-a-2012-12-12-12-25-57
+- id: uzhturtle-a-2012-12-12-12-28-10
+- id: uzhturtle-a-2012-12-12-12-29-37
+- id: uzhturtle-a-2012-12-12-12-34-40
+- id: uzhturtle-a-2012-12-12-12-36-59
+- id: uzhturtle-a-2012-12-12-12-38-57
+- id: uzhturtle-a-2012-12-12-12-40-14
+- id: uzhturtle-a-2012-12-12-12-41-29
+- id: uzhturtle-a-2012-12-12-12-42-38
+- id: uzhturtle-a-2012-12-12-12-43-43
+- id: uzhturtle-a-2012-12-12-12-45-24
+- id: uzhturtle-a-2012-12-12-12-49-19
+- id: uzhturtle-a-2012-12-12-12-49-50
+
