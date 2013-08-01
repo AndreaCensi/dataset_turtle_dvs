@@ -4,11 +4,11 @@
   - rawlogs.library.Multiple
   - logs:
     - - rawlogs_aer.AERLog
-      - "file:filename": "${date}.aedat"
+      - "file:filename": "dec12-dvs-outside/${date}.aedat"
         interval: 0.01
 
     - - rawlogs_ros.ROSLog
-      - "file:filename": "${date}.bag"
+      - "file:filename": "dec12-dvs-outside/${date}.bag"
       
     annotations:
       tags: ['uzhturtle']

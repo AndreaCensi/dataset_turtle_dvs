@@ -5,14 +5,14 @@
   - rawlogs.library.Multiple
   - logs:
     - - rawlogs_aer.AERLog
-      - "file:filename": "${date}.aedat"
+      - "file:filename": "dec12-dvs-arena/${date}.aedat"
         interval: 0.01
 
     - - rawlogs_ros.ROSLog
-      - "file:filename": "${date}.bag"
+      - "file:filename": "dec12-dvs-arena/${date}.bag"
       
     annotations:
-      tags: [- id: uzhturtle']
+      tags: [uzhturtle]
       robot: &unicornA_base1
         name: uzhturtle
         shape: dvs-cam
@@ -26,6 +26,7 @@
         disturbances: []
       notes: | 
         pass
+
 
 - id: uzhturtle-a-2012-12-12-12-33-19  # good angular
 - id: uzhturtle-a-2012-12-12-12-24-59  # good angular 
