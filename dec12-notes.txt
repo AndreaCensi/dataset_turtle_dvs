@@ -1,0 +1,73 @@
+
+J1    calibration data  2012-12-12-12-08-01.bag
+J2    (one botched, the big one)
+
+
+J3  2012-12-12-12-22-46.bag   forward and bacward
+J4  2012-12-12-12-23-56.bag   forward, then rotating in place
+J5  2012-12-12-12-24-59.bag   rotating in place
+J6   2012-12-12-12-25-57.bag   a little tour 
+
+
+J7  2012-12-12-12-28-10.bag   forward 
+
+J8 2012-12-12-12-29-37.bag.   forward/turn from same position as the previous one
+
+J9 2012-12-12-12-31-22.bag. big tour with slalom
+
+J10 2012-12-12-12-33-19.bag  clockwise
+
+J11 2012-12-12-12-34-40.bag. ccw
+
+
+J12 2012-12-12-12-36-59.bag   forward   0.0847288609443
+ J13 2012-12-12-12-38-57.bag    0.165112580186
+J14  2012-12-12-12-40-14.bag. 0.245
+
+J15  2012-12-12-12-41-29.bag 0.32
+
+J16 2012-12-12-12-42-38.bag 0.62
+
+J17  2012-12-12-12-43-43 1.20  
+
+J18  2012-12-12-12-45-24  2,13 omega only rotation too fast with jonas
+
+J19  2012-12-12-12-46-23.bag 2.13 omega probablt staurated
+
+J20  prob. 2012-12-12-12-49-19???  0.73
+
+J21  2012-12-12-12-49-50.  tour
+
+
+
+With tracker
+J22 2012-12-12-15-37-11.bag a little bit around       no optitrack started
+
+
+
+
+J23 2012-12-12-15-39-55.bag.
+
+
+
+J24  2012-12-12-16-02-45.bag   big log
+
+J25 2012-12-12-16-15-22.bag  translation .11
+
+J26 2012-12-12-16-17-28.bag. translation .23
+
+J27 2012-12-12-16-21-18.bag acting
+
+J28 2012-12-12-16-24-53.bag rotation only no people
+
+J29  ? (realized later: 2012-12-12-16-26-59.)
+
+
+J32  2012-12-12-16-37-58.bag  from outside
+
+
+
+
+J30 2012-12-12-16-30-37.bag. group picture
+J31 2012-12-12-16-32-08.bag group picture 
+
