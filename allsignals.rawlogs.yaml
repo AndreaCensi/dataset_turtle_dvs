@@ -1,0 +1,60 @@
+
+- id: poses-${rawlog}
+  desc: "Extract additional signals from log"
+  code:
+  - rawlogs_filters.ProcgraphFilter
+  - rawlog: ${rawlog}
+    model: 
+    - dataset_turtle_dvs.turtle_signals1
+    - {}
+    inputs: 
+        odom: /odom
+    outputs: 
+        vx: odom_vx
+        vy: odom_vy
+        omega: odom_omega
+        x: odom_x
+        y: odom_y
+        theta: odom_theta
+        pose: odom
+        vel: odom_vel
+
+- id: imu-${rawlog}
+  desc: "Extract IMU signals from log"
+  code:
+  - rawlogs_filters.ProcgraphFilter
+  - rawlog: ${rawlog}
+    model: 
+    - dataset_turtle_dvs.turtle_imu
+    - {}
+    inputs: 
+        imu: /imu/raw
+    outputs: 
+        omega: imu_omega
+        omega_abs: imu_omega_abs
+
+
+- id: aer-${rawlog}
+  desc: "Extract event statistics from log"
+  code:
+  - rawlogs_filters.ProcgraphFilter
+  - rawlog: ${rawlog}
+    model: 
+    - dataset_turtle_dvs.turtle_aer
+    - {}
+    inputs: 
+        aer_packets: aer
+    outputs: 
+        aer_nevents: aer_nevents
+
+- id: all-${rawlog}
+  desc: xxx
+  code:
+  - rawlogs.library.Multiple
+  - logs:
+    - ${rawlog}
+    - imu-${rawlog}
+    - poses-${rawlog}
+    - aer-${rawlog}
+
+- id: all-uzhturtle-2012-12-12-16-37-58
