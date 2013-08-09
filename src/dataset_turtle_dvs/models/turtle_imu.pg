@@ -1,0 +1,12 @@
+--- model turtle_imu
+input imu
+
+output omega
+output omega_abs
+
+|input name=imu| -> |angular_from_imu| -> omega
+
+import procgraph_numpy_ops
+
+omega -> |output name=omega|
+omega -> |abs| -> |output name=omega_abs|

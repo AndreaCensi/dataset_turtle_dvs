@@ -1,0 +1,27 @@
+--- model turtle_signals1
+input odom
+output vel
+output vx
+output vy
+output omega
+output pose
+output x
+output y
+output theta
+import procgraph_robotics
+
+
+|input name=odom| -> |SE2_from_odometry| -> q -> |se2_from_SE2_seq| -> vel 
+
+
+vel -> |output name=vel|
+vel -> |vx_from_se2| -> |output name=vx|
+vel -> |vy_from_se2| -> |output name=vy|
+vel -> |omega_from_se2| -> |output name=omega|
+
+q -> |x_from_SE2| -> |output name=x|
+q -> |y_from_SE2| -> |output name=y|
+q -> |angle_from_SE2| -> |output name=theta|
+
+
+

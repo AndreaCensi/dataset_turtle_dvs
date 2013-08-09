@@ -1,0 +1,8 @@
+--- model turtle_aer
+input aer_packets
+output packet_size
+
+|input name=aer_packets| -> aer
+
+aer -> |aer_num| -> |output name=packet_size|
+
