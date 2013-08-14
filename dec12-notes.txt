@@ -40,13 +40,9 @@ J21  2012-12-12-12-49-50.  tour
 
 
 
-With tracker
-J22 2012-12-12-15-37-11.bag a little bit around       no optitrack started
-
-
-
-
-J23 2012-12-12-15-39-55.bag.
+With tracker: these have interference
+J22 2012-12-12-15-37-11.bag  interference a little bit around       no optitrack started
+J23 2012-12-12-15-39-55.bag. interference       
 
 
 
