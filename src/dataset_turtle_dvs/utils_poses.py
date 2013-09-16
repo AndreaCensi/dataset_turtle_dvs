@@ -9,6 +9,8 @@ def SE2_from_posecov(x):
     q = pose_from_ROS_pose(x.pose.pose)
     return SE2_from_SE3(q)
 
+
+
 @simple_block
 def SE2_from_odometry(x):
     """ Returns element of SE2 from ROS timestamped covariance. """
