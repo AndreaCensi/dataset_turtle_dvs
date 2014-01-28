@@ -1,4 +1,5 @@
-from procgraph.core.registrar_other import simple_block
+from procgraph import simple_block
+
 
 @simple_block
 def angular_from_imu(x):
