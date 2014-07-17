@@ -4,3 +4,4 @@ dec12-calibration
 *.egg-info
 *.pgc
 1212-dvs-turtlebot
+*.pyc
